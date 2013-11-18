@@ -9,6 +9,9 @@
         "1.9.3-p429": true
       },
       "default": "1.9.3-p429"
+    },
+    "ark": {
+      "tar": "/usr/bin/tar"
     }
   },
   "override_attributes": {

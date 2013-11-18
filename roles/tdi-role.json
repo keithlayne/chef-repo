@@ -1,0 +1,25 @@
+{
+  "name": "tdi-role",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "chruby": {
+      "rubies": {
+        "1.9.3-p392": false,
+        "1.9.3-p429": true
+      },
+      "default": "1.9.3-p429"
+    }
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[homebrew]",
+    "recipe[irc]",
+    "recipe[git]",
+    "recipe[chruby::system]"
+  ],
+  "env_run_lists": {
+  }
+}
